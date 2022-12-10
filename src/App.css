@@ -1,0 +1,27 @@
+body {
+  font-family: arial, sans-serif;
+}
+
+h1 {
+  color: #030303;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 110;
+  line-height: 40px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: #ff17a6;
+  font-size: 15px;
+  font-weight: 80;
+  list-style: none;
+}
+
+.App {
+  margin: 20px;
+}
