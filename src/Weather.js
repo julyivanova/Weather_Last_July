@@ -3,11 +3,11 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
+      ready: true,
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       icon: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
@@ -16,11 +16,9 @@ export default function Weather() {
       wind: response.data.wind.speed,
       city: response.data.main,
     });
-
-    setReady(true);
   }
 
-  if (ready) {
+  if (weatherData.ready) {
     return (
       <div className="Weather">
         <form>
