@@ -9,7 +9,6 @@ export default function Weather() {
         <li>Wednesday 07:00</li>
         <li>Mostly Cloudy</li>
       </ul>
-      Hello from Weather
     </div>
   );
 }
