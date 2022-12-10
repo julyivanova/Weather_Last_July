@@ -1,3 +1,7 @@
 .Weather {
   border: 1px solid #daddel;
 }
+
+.Weather h1 {
+  color: #878787;
+}
