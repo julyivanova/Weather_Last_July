@@ -9,6 +9,8 @@ export default function Weather() {
     console.log(response.data);
     setWeatherData({
       temperature: response.data.main.temp,
+      description: ``,
+      icon: `https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png`,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       city: response.data.main,
@@ -47,8 +49,8 @@ export default function Weather() {
           <div className="col-6">
             <div className="clearfix">
               <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Mostly Cloudy"
+                src={weatherData.iconUrl}
+                alt={weatherData.description}
                 className="float-left"
               />
               <div className="float-left">
