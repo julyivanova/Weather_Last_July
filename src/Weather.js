@@ -6,7 +6,8 @@ export default function Weather() {
     <div className="Weather">
       <h1>New York</h1>
       <ul>
-        <li></li>Wednesday 7:00
+        <li>Wednesday 07:00</li>
+        <li>Mostly Cloudy</li>
       </ul>
       Hello from Weather
     </div>
