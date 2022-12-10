@@ -12,6 +12,7 @@ export default function Weather() {
       description: response.data.weather[0].description,
       icon: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
       humidity: response.data.main.humidity,
+      date: "Wednesday 07:00",
       wind: response.data.wind.speed,
       city: response.data.main,
     });
