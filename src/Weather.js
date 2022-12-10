@@ -9,7 +9,8 @@ export default function Weather() {
     console.log(response.data);
     setWeatherData({
       temperature: response.data.main.temp,
-      wind: 13,
+      humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
       city: response.data.main,
     });
 
@@ -60,9 +61,8 @@ export default function Weather() {
           </div>
           <div className="col-6">
             <ul>
-              <li>Precipitation: 15%</li>
-              <li>Humidity: 72%</li>
-              <li>Wind: {wind} km/h</li>
+              <li>Humidity: {weatherData.humidity}%</li>
+              <li>Wind: {weatherData.wind} km/h</li>
             </ul>
           </div>
         </ul>
