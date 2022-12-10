@@ -5,6 +5,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>Weather App</h1>
+      <button className="btn btn-primary">Hello</button>
       <footer>
         This project was coded by{" "}
         <a href="https://shecodes.com/" target="_blank">
