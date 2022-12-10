@@ -10,7 +10,7 @@ export default function Weather() {
     setWeatherData({
       temperature: response.data.main.temp,
       description: ``,
-      icon: `https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png`,
+      icon: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       city: response.data.main,
